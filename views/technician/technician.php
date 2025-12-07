@@ -54,7 +54,7 @@ $requests = $pdo->query($sql)->fetchAll();
                 <h1 class="mac-title h2 mb-1">ระบบแจ้งซ่อมอุปกรณ์ (ช่าง)</h1>
                 <p class="mac-subtitle mb-0">ดูคิวงานทั้งหมด ปรับสถานะได้รวดเร็วบนหน้าจอใสสไตล์ macOS</p>
             </div>
-            <a href="../../public/index.php" class="btn mac-btn-secondary">กลับหน้าแรก</a>
+            <a href="../../index.php" class="btn mac-btn-secondary">กลับหน้าแรก</a>
         </div>
     </div>
 

@@ -14,7 +14,7 @@
 <div class="container py-5">
     <div class="mac-hero mb-5">
         <div class="row align-items-center">
-            <div class="ßcol-12 col-lg-7">
+            <div class="col-12 col-lg-7">
                 <p class="text-uppercase small fw-bold text-secondary mb-1">LabFix</p>
                 <h1 class="mac-title display-5">ระบบแจ้งซ่อมอุปกรณ์ห้องปฏิบัติการ</h1>
                 <p class="mac-subtitle fs-5 mb-4">จัดการงานซ่อมด้วยหน้าตาใหม่สไตล์ macOS ใส ลื่นตา พร้อมใช้งานทั้งผู้แจ้งและช่าง</p>

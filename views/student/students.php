@@ -69,7 +69,7 @@ if ($requesterName !== '') {
                 <h1 class="mac-title h2 mb-1">ระบบแจ้งซ่อมอุปกรณ์ (ผู้แจ้ง)</h1>
                 <p class="mac-subtitle mb-0">กรอกข้อมูล แจ้งซ่อม และติดตามสถานะด้วยหน้าตาใสแบบ macOS</p>
             </div>
-            <a href="../../public/index.php" class="btn mac-btn-secondary">กลับหน้าแรก</a>
+            <a href="../../index.php" class="btn mac-btn-secondary">กลับหน้าแรก</a>
         </div>
     </div>
 
