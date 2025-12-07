@@ -1,0 +1,200 @@
+:root {
+    --mac-font: "SF Pro Display", "SF Pro Text", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    --mac-bg-1: #ecf3ff;
+    --mac-bg-2: #e0ecff;
+    --mac-panel: rgba(255, 255, 255, 0.75);
+    --mac-panel-strong: rgba(255, 255, 255, 0.92);
+    --mac-border: rgba(255, 255, 255, 0.6);
+    --mac-shadow: 0 24px 60px rgba(15, 23, 42, 0.18);
+    --mac-primary: #007aff;
+    --mac-success: #34c759;
+    --mac-text: #0f172a;
+    --mac-muted: #5b6476;
+}
+
+* {
+    font-family: var(--mac-font);
+}
+
+body.mac {
+    min-height: 100vh;
+    background: radial-gradient(120% 120% at 20% 20%, rgba(0, 122, 255, 0.18), transparent 50%),
+    radial-gradient(100% 120% at 80% 0%, rgba(52, 199, 89, 0.16), transparent 42%),
+    linear-gradient(135deg, var(--mac-bg-1), var(--mac-bg-2));
+    color: var(--mac-text);
+}
+
+.mac-nav {
+    background: var(--mac-panel);
+    border: 1px solid var(--mac-border);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    backdrop-filter: blur(18px) saturate(140%);
+    -webkit-backdrop-filter: blur(18px) saturate(140%);
+    border-radius: 18px;
+    margin: 12px auto;
+    width: calc(100% - 24px);
+}
+
+.mac-nav .navbar-brand {
+    letter-spacing: -0.01em;
+}
+
+.mac-nav .nav-link {
+    color: var(--mac-muted);
+    font-weight: 600;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.mac-nav .nav-link:hover,
+.mac-nav .nav-link:focus {
+    color: var(--mac-primary);
+    transform: translateY(-1px);
+}
+
+.mac-shell {
+    background: var(--mac-panel);
+    border: 1px solid var(--mac-border);
+    box-shadow: var(--mac-shadow);
+    backdrop-filter: blur(20px) saturate(150%);
+    -webkit-backdrop-filter: blur(20px) saturate(150%);
+    border-radius: 20px;
+}
+
+.mac-hero {
+    background: var(--mac-panel-strong);
+    border: 1px solid var(--mac-border);
+    border-radius: 22px;
+    box-shadow: var(--mac-shadow);
+    padding: 32px;
+    position: relative;
+    overflow: hidden;
+}
+
+.mac-hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(120% 160% at 80% 0%, rgba(0, 122, 255, 0.08), transparent 60%);
+    pointer-events: none;
+}
+
+.mac-title {
+    font-weight: 800;
+    letter-spacing: -0.03em;
+}
+
+.mac-subtitle {
+    color: var(--mac-muted);
+}
+
+.mac-card {
+    border: 1px solid var(--mac-border);
+    border-radius: 18px;
+    background: var(--mac-panel);
+    box-shadow: var(--mac-shadow);
+}
+
+.mac-card .card-header {
+    border-bottom: 1px solid rgba(15, 23, 42, 0.06);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.6));
+    font-weight: 700;
+}
+
+.mac-btn-primary {
+    background: linear-gradient(180deg, #4da1ff, #007aff);
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 122, 255, 0.25);
+    padding: 10px 16px;
+    font-weight: 700;
+}
+
+.mac-btn-primary:hover {
+    color: #fff;
+    filter: brightness(1.05);
+}
+
+.mac-btn-secondary {
+    background: var(--mac-panel);
+    color: var(--mac-text);
+    border: 1px solid var(--mac-border);
+    border-radius: 12px;
+    font-weight: 700;
+}
+
+.mac-btn-secondary:hover {
+    border-color: rgba(0, 122, 255, 0.5);
+    color: var(--mac-primary);
+}
+
+.mac-form-control,
+.mac-form-select,
+.mac-textarea {
+    background: rgba(255, 255, 255, 0.85);
+    border: 1px solid rgba(15, 23, 42, 0.08);
+    border-radius: 12px;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.6);
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.mac-form-control:focus,
+.mac-form-select:focus,
+.mac-textarea:focus {
+    border-color: rgba(0, 122, 255, 0.4);
+    box-shadow: 0 0 0 3px rgba(0, 122, 255, 0.12);
+}
+
+.mac-table thead th {
+    background: rgba(255, 255, 255, 0.9);
+    border-bottom: 1px solid rgba(15, 23, 42, 0.08);
+}
+
+.mac-table tbody tr {
+    transition: background 0.2s ease, transform 0.15s ease;
+}
+
+.mac-table tbody tr:hover {
+    background: rgba(255, 255, 255, 0.6);
+    transform: translateY(-1px);
+}
+
+.mac-badge {
+    padding: 6px 10px;
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+.mac-badge.pending {
+    background: rgba(255, 204, 0, 0.18);
+    color: #ad6800;
+}
+
+.mac-badge.repairing {
+    background: rgba(0, 122, 255, 0.15);
+    color: #084e9e;
+}
+
+.mac-badge.done {
+    background: rgba(52, 199, 89, 0.15);
+    color: #1d7a3a;
+}
+
+.mac-footer {
+    color: var(--mac-muted);
+    font-weight: 600;
+}
+
+.mac-footer .container {
+    border: 1px solid var(--mac-border);
+    border-radius: 16px 16px 0 0;
+    background: var(--mac-panel);
+    backdrop-filter: blur(14px) saturate(130%);
+    -webkit-backdrop-filter: blur(14px) saturate(130%);
+}
+
+@media (max-width: 768px) {
+    .mac-hero {
+        padding: 24px;
+    }
+}
